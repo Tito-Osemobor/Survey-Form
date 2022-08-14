@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tito's Survey Form</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 id="title">Tito's Survey Form</h1>
+        <p id="description">
+            <em>Thank you for taking the time to help me improve my website</em>
+        </p>
+        <form id="survey-form">
+            <div>
+                <label id="name-label">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    class="form-control"
+                    required
+                />
+            </div>
+            <div>
+                <label id="email-label">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    class="form-control"
+                    required
+                />
+            </div>
+            <div>
+                <label id="number-label">Age(optional)</label>
+                <input
+                    type="number"
+                    id="number"
+                    placeholder="Age"
+                    min="10"
+                    max="120"
+                    class="form-control"
+                />
+            </div>
+            <div>
+                <label
+                    >Which part of the website should I work on the most?</label
+                >
+                <select id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select one</option>
+                    <option value="1">Everything LOL!!</option>
+                    <option value="2">Overall Appearance</option>
+                    <option value="3">Website Responsiveness</option>
+                    <option value="4">Mobile Appearance</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you recommend this site to a friend?</p>
+                <label
+                    ><input type="radio" name="recommend" /> Definitely</label
+                >
+                <label><input type="radio" name="recommend" /> Maybe</label>
+                <label><input type="radio" name="recommend" /> Not Sure</label>
+            </div>
+            <div>
+                <label>What is your favourite part of this website</label>
+                <select class="form-control" required>
+                    <option disabled selected value>Select one</option>
+                    <option value="1">Everything LOL!!</option>
+                    <option value="2">Overall Appearance</option>
+                    <option value="3">Website Responsiveness</option>
+                    <option value="4">Mobile Appearance</option>
+                </select>
+            </div>
+            <div>
+                <p>
+                    What would you like to see on the site next?
+                    <span>(Check all that apply)</span>
+                </p>
+                <label><input type="checkbox" value="5" /> A fun game :)</label>
+                <label
+                    ><input type="checkbox" value="6" /> Some fun reactions with
+                    javascript</label
+                >
+                <label
+                    ><input type="checkbox" value="7" /> Add more
+                    webpages</label
+                >
+                <label
+                    ><input type="checkbox" value="8" /> A carousel of your
+                    projects</label
+                >
+                <label
+                    ><input type="checkbox" value="9" /> A picture of you
+                    ;)</label
+                >
+            </div>
+            <div>
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    placeholder="Enter your comment here..."
+                    class="text-area"
+                >
+                </textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit" class="submit" />
+            </div>
+        </form>
+    </body>
+</html>
